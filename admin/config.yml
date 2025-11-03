@@ -1,12 +1,11 @@
+site_url: https://pulokadhikary.github.io
+locale: en
 backend:
   name: git-gateway
   branch: main
-
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
-
 publish_mode: editorial_workflow
-
 collections:
   - name: "feed"
     label: "Feed"
@@ -50,5 +49,4 @@ collections:
         name: "enable_copy_link"
         widget: "boolean"
         default: true
-
 # Note: Admin index.html will be served at /admin/index.html to load Netlify CMS UI
