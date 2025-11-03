@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulok Adhikary - Trainer in Disaster Management</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Netlify Identity Widget -->
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    <!-- Netlify Identity API Configuration -->
+    <meta name="netlify-identity-url" content="https://beautiful-cassata-65b846.netlify.app/.netlify/identity">
     <!-- Netlify CMS Configuration Placeholder -->
     <!-- Configuration will be added at: /admin/config.yml -->
     <!-- Gitalk Configuration Placeholder -->
@@ -25,7 +40,6 @@
             </ul>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
@@ -34,7 +48,6 @@
             <p class="hero-bio">Dedicated disaster management professional, emergency responder, and youth leader committed to building resilient communities through training, leadership, and climate action advocacy.</p>
         </div>
     </section>
-
     <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
@@ -43,7 +56,6 @@
             <p>My experience spans training programs, emergency response, research initiatives, and youth leadership development. I am committed to creating safer, more resilient communities through education, mentorship, and collaborative action.</p>
         </div>
     </section>
-
     <!-- Experience Section -->
     <section class="section" id="experience">
         <div class="container">
@@ -77,7 +89,6 @@
             </div>
         </div>
     </section>
-
     <!-- Education Section -->
     <section class="section" id="education">
         <div class="container">
@@ -89,7 +100,6 @@
             </div>
         </div>
     </section>
-
     <!-- Skills & Awards Section -->
     <section class="section" id="skills">
         <div class="container">
@@ -128,11 +138,10 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Pulok Adhikary. All rights reserved.</p>
+            © 2025 Pulok Adhikary. All rights reserved.
         </div>
     </footer>
 </body>
